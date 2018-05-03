@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    command: "bash /go/src/github.com/racoonberus/transcodersvc/bin/run.sh"
+    volumes:
+      - ./:/go/src/github.com/racoonberus/transcodersvc/
+  db:
+    image: postgres:9.6
+    ports:
+      - "45435:5432"
+    environment:
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "12345678"
+    volumes:
+      - ./:/code
