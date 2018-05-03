@@ -2,7 +2,7 @@
 
 Alternative free software, in contrast to Amazon Transcoder.
 
-### RESR API description
+### REST API description
 
 | URI  | Method  | Params  | Description  |
 |---|---|---|---|
